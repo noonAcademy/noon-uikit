@@ -1,0 +1,47 @@
+{
+	"name": "noon-uikit",
+	"version": "0.0.1",
+	"description": "a minimalist css framework",
+	"main": "dist/noon-uikit.css",
+	"author": "Shoeb Raza <mail@shoebraza.com>",
+	"license": "MIT",
+	"keywords": [
+		"noon",
+		"ui-kit",
+		"css3",
+		"front-end",
+		"framework",
+		"html5",
+		"responsive",
+		"responsive",
+		"sass",
+		"scss"
+	],
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+		"autoprefixer": "^8.2.0"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.23.6",
+		"eslint": "^4.19.1",
+		"eslint-config-styled": "^0.0.2",
+		"node-sass": "^4.8.3",
+		"npm-run-all": "^4.1.2",
+		"onchange": "^3.3.0",
+		"postcss-cli": "^5.0.0",
+		"rimraf": "^2.6.2",
+		"sass-lint": "^1.12.1"
+	},
+	"scripts": {
+		"start": "run-p build watch serve",
+		"build": "run-s clean sass autoprefixer",
+		"clean": "rimraf dist",
+		"sass": "node-sass --output-style expanded src/noon-uikit.scss dist/noon-uikit.css && node-sass --output-style compressed src/noon-uikit.scss dist/noon-uikit.min.css",
+		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
+		"watch": "onchange src -- run-p build",
+		"serve": "browser-sync start --no-notify --ss dist -f dist",
+		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check ."
+	}
+}

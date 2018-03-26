@@ -1,0 +1,41 @@
+
+html,
+
+body {
+    color: #333;
+}
+
+header {
+    background: #0cc8f4;
+    color: #fff;
+    height: 50px;
+    line-height: 50px; 
+}
+header h3 {
+    margin: 0;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;    
+}
+section {
+    position: relative;
+    padding: 40px 0;
+}
+
+section > h3 {
+    font-size: 1.5rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.flex-1 {
+    flex: 1;
+}
