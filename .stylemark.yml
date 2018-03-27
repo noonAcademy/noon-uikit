@@ -1,0 +1,11 @@
+name: noon-uikit
+
+excludeDir:
+  - docs
+
+sidebar:
+  background: "#0cc8f4"
+  textColor: "#fff"
+
+headHtml: |
+  <link rel="stylesheet" href="dist/noon-uikit.min.css">

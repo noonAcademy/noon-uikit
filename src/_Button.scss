@@ -1,8 +1,25 @@
 
-// Button
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
+/*
+---
+name: Button
+category: Components
+---
 
-.button,
+Buttons can be used with `<button>` and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+- Outline: outline button use as a secondary button
+- Link: Link Button without background
+
+```types.html
+<button class="btn">Default</button>
+<button class="btn btn-outline">Outline</button>
+<button class="btn btn-link">Link</button>
+```
+*/
+
+.btn,
 button,
 input[type='button'],
 input[type='reset'],
@@ -48,7 +65,7 @@ input[type='submit'] {
         }    
     }
 
-	&.button-outline {
+	&.btn-outline {
         background-color:transparent;
         background: none;
         border-color: $brand-color;
@@ -72,7 +89,7 @@ input[type='submit'] {
         }
     }             
 
-    &.button-link {
+    &.btn-link {
         background-color: transparent;
         background: none;
         border-color: transparent;

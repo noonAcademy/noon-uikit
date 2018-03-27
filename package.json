@@ -21,10 +21,10 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-		"autoprefixer": "^8.2.0"
+		"autoprefixer": "^8.2.0",
+		"stylemark": "^0.6.5"
 	},
 	"devDependencies": {
-		"browser-sync": "^2.23.6",
 		"eslint": "^4.19.1",
 		"eslint-config-styled": "^0.0.2",
 		"node-sass": "^4.8.3",
@@ -35,13 +35,15 @@
 		"sass-lint": "^1.12.1"
 	},
 	"scripts": {
-		"start": "run-p build watch serve",
-		"build": "run-s clean sass autoprefixer",
-		"clean": "rimraf dist",
+		"start": "run-p build watch",
+		"build": "run-s clean sass autoprefixer copy",
+		"copy": "copyfiles dist/*.css docs",
+		"doc": "stylemark -i dist -o docs -c .stylemark.yml -w -b",
+		"clean": "rimraf dist docs/dist",
 		"sass": "node-sass --output-style expanded src/noon-uikit.scss dist/noon-uikit.css && node-sass --output-style compressed src/noon-uikit.scss dist/noon-uikit.min.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
 		"watch": "onchange src -- run-p build",
-		"serve": "browser-sync start --no-notify --ss dist -f dist",
-		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check ."
+		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check .",
+		"setup": "npm i copyfiles yarn -g"
 	}
 }

@@ -12,14 +12,12 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trash-*
 .Trashes
-._*
 .lock-wscript
 .node_repl_history
 .npm
 .nyc_output
 Desktop.ini
 Thumbs.db
-build/Release
 coverage
 ehthumbs.db
 lib-cov
@@ -27,3 +25,4 @@ logs
 node_modules
 npm-debug.log*
 pids
+docs
