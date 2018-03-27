@@ -38,12 +38,13 @@
 		"start": "run-p build watch",
 		"build": "run-s clean sass autoprefixer copy",
 		"copy": "copyfiles dist/*.css docs",
-		"doc": "stylemark -i dist -o docs -c .stylemark.yml -w -b",
+		"doc": "stylemark -i dist -o docs -c .stylemark.yml -b",
+		"doc:watch": "stylemark -i dist -o docs -c .stylemark.yml -w -b",
 		"clean": "rimraf dist docs/dist",
 		"sass": "node-sass --output-style expanded src/noon-uikit.scss dist/noon-uikit.css && node-sass --output-style compressed src/noon-uikit.scss dist/noon-uikit.min.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
 		"watch": "onchange src -- run-p build",
 		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check .",
-		"setup": "npm i copyfiles yarn -g"
+		"setup": "npn i && npm install copyfiles yarn -g"
 	}
 }
