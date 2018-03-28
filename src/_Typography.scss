@@ -1,0 +1,69 @@
+
+/*
+---
+name: Typography
+category: Components
+---
+
+Buttons can be used with `<button>` and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+- Outline: outline button use as a secondary button
+- Link: Link Button without background
+
+```types.html
+      
+<section class="headings-and-typography">
+
+			<h1>Heading and TypoGraphy</h1>
+			<h1>
+
+				خلق الانسجام بين الخطوط العربية والل</h1>
+			<h2>
+
+				خلق الانسجام بين الخطوط العربية والل</h2>
+			<h3>
+
+				خلق الانسجام بين الخطوط العربية والل</h3>
+			<h4>
+
+				خلق الانسجام بين الخطوط العربية والل</h4>
+
+			<h5>
+
+				خلق الانسجام بين الخطوط العربية والل</h5>
+			<h6>
+
+				خلق الانسجام بين الخطوط العربية والل</h6>
+
+
+			<p>يبدو الزمن الآن عصرا ذهبيا لتصميم الخطوط الطباعية؛ فلا يقتصر الأمر على أن هناك مسابك حروف أكثر الآن من أي وقت ولا أن التوزيع
+				أسهل وأكثر مباشرة ولا أن عددا مهولا من المدونات والمجلات المتخصصة مهتمة جدا بالخط الطباعي ولكن حتى الإعلام ذي الاهتمامات
+				العامة مشتبك بالحوار (حتى وإن كان الاهتمام متقطعا). هناك دورات لتصميم الخطوط الطباعية تفتتح بشكل منتظم منتجة جحافل من
+				مصممي الخطوط. وهناك الآن أكثر من 000,150 خط متاح للتحميل المباشر. ورغم كل الاهتمام</p>
+
+
+		</section>
+
+
+```
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 300; }
+  h1 { font-size: 36px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 18px; }
+  h5 { font-size: 14px; }
+  h6 { font-size: 12px; }
+  
+  @media (max-width: 550px) {
+    h1 { font-size: 20px; }
+    h2 { font-size: 15px; }
+    h3 { font-size: 14px; }
+    h4 { font-size: 12px; }
+  }
