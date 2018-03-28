@@ -13,9 +13,50 @@ Types of buttons:
 - Link: Link Button without background
 
 ```types.html
-<button class="btn">Default</button>
-<button class="btn btn-outline">Outline</button>
-<button class="btn btn-link">Link</button>
+
+<h1>Default Buttons</h1>
+			<button class="button-primary">
+				تفعي الإشتراك
+			</button>
+
+			<button class="button-link">
+				تفعي الإشتراك
+			</button>
+
+			<br>
+			<br>
+
+			<h1>Size Variants</h1>
+
+			<button class="button button-large">
+				تفعي الإشتراك
+			</button>
+
+			<button class="button button-medium">
+				تفعي الإشتراك
+			</button>
+
+			<button class=" button button-small">
+				تفعي الإشتراك
+			</button>
+
+			<br>
+			<br>
+			<h1>Link Buttons</h1>
+
+			<button class="button button-start">
+
+				أحس
+			</button>
+			<button class="button button-continue">
+
+				أحس
+			</button>
+			<button class="button button-review">
+
+				أحس
+			</button>
+
 ```
 */
 
@@ -112,3 +153,103 @@ input[type='submit'] {
         }
     }
 }
+button {
+    border: none;
+}
+.button-primary{
+    background: linear-gradient( $gradient-angle, $brand-color-1,$brand-color-2 );
+    border-radius: 7px;
+    padding: .5em 1.5em;
+    color: white;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    min-width: 190px;
+    min-height: 60px;
+    font-size: 20px;
+  
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+  }
+  
+  // Link Button
+  .button-link{
+    background: $grey-color-lightest;
+    border-radius: 7px;
+    padding: .5em 1.5em;
+    color: black;
+    display: inline-block;
+    width: auto;
+    min-width: 138px;
+    min-height: 55px;
+    font-size: 12px;
+    text-align: center;
+    &:hover {
+          cursor: pointer;
+      background: $grey-color-light;
+      }
+  }
+
+.button {
+
+    @include linear-gradient( -45deg, $brand-color-1,$brand-color-2 );
+    border-radius: 5px;
+    width: auto;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin:0px auto;
+    
+    box-sizing: border-box;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+.button-large{
+    display: inline-block;
+    min-width: 190px;
+    font-size: 20px;
+    min-height: 60px;
+    
+  }
+  .button-medium{
+    display: inline-block;
+    min-width: 120px;
+    font-size: 18px;
+    min-height: 55px;
+    
+  }
+  .button-small{
+    display: inline-block;
+    min-width: 100px;
+    font-size: 15px;
+    min-height: 44px;
+
+  }
+
+  .button-start{
+    display: inline-block;
+    min-width: 80px;
+    min-height: 60px;
+    padding: 10px 10px 5px 10px;
+  }
+  .button-continue{
+    background: white;
+    border:1px solid $brand-color-1;
+    color: $brand-color-1;
+    display: inline-block;
+    min-width: 80px;
+    min-height: 60px;
+    padding: 10px 10px 5px 10px;
+  }
+  .button-review{
+    background: #6EAF27;
+    display: inline-block;
+    min-width: 80px;
+    min-height: 60px;
+    padding: 10px 10px 5px 10px;
+  }

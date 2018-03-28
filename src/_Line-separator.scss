@@ -1,0 +1,25 @@
+
+/*
+---
+name: Line-separator
+category: components
+---
+
+Line Separator can be used with `<div class="line-separator"></div>` element.
+
+Types of buttons:
+- Default: Standard button
+- Outline: outline button use as a secondary button
+- Link: Link Button without background
+
+```types.html
+
+<div class="line-separator"></div>
+
+```
+*/
+
+.line-separator{
+    @include vertical-fading-line( 1120px, 1px );
+    margin-top: 20px;
+  }
