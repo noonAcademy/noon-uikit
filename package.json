@@ -45,6 +45,6 @@
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
 		"watch": "onchange src -- run-p build",
 		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check .",
-		"setup": "npn i && npm install copyfiles yarn -g"
+		"setup": "npm i && npm install copyfiles yarn -g"
 	}
 }

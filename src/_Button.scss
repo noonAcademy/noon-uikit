@@ -11,20 +11,36 @@ Types of buttons:
 - Outline: outline button use as a secondary button
 - Link: Link Button without background
 
-- Small: Small sized button
-- Medium: Medium sized button
-- Large: Large sized button
-
 ```types.html
 <button class="btn">Default</button>
 <button class="btn btn--outline">Outline</button>
 <button class="btn btn--link">Link</button>
-
-<button class="btn btn--sm">Link</button>
-<button class="btn btn--md">Link</button>
-<button class="btn btn--lg">Link</button>
 ```
 */
+
+
+/*
+---
+name: Button
+category: Components
+---
+
+Buttons can be used with `<button>` and `<input>` elements.
+
+Sizes of buttons:
+- Small: Small sized button
+- Medium: Medium sized button
+- Large: Large sized button
+
+```sizes.html
+<button class="btn btn--sm">Small</button>
+<button class="btn btn--md">Medium</button>
+<button class="btn btn--lg">Large</button>
+```
+*/
+
+
+
 
 .btn,
 button,
