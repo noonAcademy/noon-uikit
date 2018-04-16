@@ -1,4 +1,3 @@
-
 /*
 ---
 name: Button
@@ -12,103 +11,137 @@ Types of buttons:
 - Outline: outline button use as a secondary button
 - Link: Link Button without background
 
+- Small: Small sized button
+- Medium: Medium sized button
+- Large: Large sized button
+
 ```types.html
 <button class="btn">Default</button>
-<button class="btn btn-outline">Outline</button>
-<button class="btn btn-link">Link</button>
+<button class="btn btn--outline">Outline</button>
+<button class="btn btn--link">Link</button>
+
+<button class="btn btn--sm">Link</button>
+<button class="btn btn--md">Link</button>
+<button class="btn btn--lg">Link</button>
 ```
 */
 
 .btn,
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
-    background-color: $brand-color;
-    background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
-	border: .1rem solid transparent;
-	border-radius: .4rem;
-	color: #fff;
-	cursor: pointer;
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: $brand-color;
+	background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
+	border: 0.1rem solid transparent;
+	border-radius: 0.4rem;
 	display: inline-block;
-	font-size: 1.1rem;
-	font-weight: 700;
-	height: 3.8rem;
-	letter-spacing: .1rem;
-	line-height: 3.8rem;
-	padding: 0 3.0rem;
+	letter-spacing: 0.1rem;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
-    white-space: nowrap;
-    margin: 0 5px;
-    &:last-child,
-    &:first-child {
-        margin: 0;
-    }
+	white-space: nowrap;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 1.0rem;
+  height: 2.5rem;
+  line-height: 2.3rem;
+  font-size: 0.9rem;
+  min-width:120px;
+  margin: 5px 0px;
+	&:last-child,
+	&:first-child {
+		margin: 0;
+	}
+
+	&.btn--sm{
+    height: 1.9rem;
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+    min-width:90px;
+  }
+	&.btn--md{
+    height: 2.5rem;
+		line-height: 2.3rem;
+		font-size: 0.9rem;
+		min-width:120px;
+  }
+  &.btn--lg{
+    height: 3.0rem;
+    line-height: 2.8rem;
+    font-size: 1.2rem;
+    min-width:150px;
+  }
 
 	&:focus,
 	&:hover {
 		background-color: $brand-color;
-        background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
+		background: linear-gradient(
+			$gradient-angle,
+			$brand-color-1,
+			$brand-color-2
+		);
+		border: .1rem solid transparent;
+    padding:0 .95rem;
 		color: #fff;
 		outline: 0;
-    }
+	}
 	&[disabled] {
 		cursor: default;
-		opacity: .5;
+		opacity: 0.5;
 
 		&:focus,
 		&:hover {
 			background-color: $brand-color;
-            background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
-        }    
-    }
+			background: linear-gradient(
+				$gradient-angle,
+				$brand-color-1,
+				$brand-color-2
+			);
+		}
+	}
 
-	&.btn-outline {
-        background-color:transparent;
-        background: none;
-        border-color: $brand-color;
-        color: $brand-color;
+	&.btn--outline {
+		background-color: transparent;
+		background: none;
+		border-color: $brand-color;
+		color: $brand-color;
 
-        &:focus,
-        &:hover {
-            background-color: transparent;
-            background: none;
-            border-color: $brand-color;
-            color: $brand-color;
-        }
+		&:focus,
+		&:hover {
+			background-color: transparent;
+			background: none;
+			border-color: $brand-color;
+			color: $brand-color;
+		}
 
-        &[disabled] {
+		&[disabled] {
+			&:focus,
+			&:hover {
+				border-color: inherit;
+				color: $brand-color;
+			}
+		}
+	}
 
-            &:focus,
-            &:hover {
-                border-color: inherit;
-                color: $brand-color;
-            }
-        }
-    }             
+	&.btn--link {
+		background-color: transparent;
+		background: none;
+		border-color: transparent;
+		color: $brand-color;
 
-    &.btn-link {
-        background-color: transparent;
-        background: none;
-        border-color: transparent;
-        color: $brand-color;
+		&:focus,
+		&:hover {
+			background-color: transparent;
+			background: none;
+			border-color: transparent;
+			color: $brand-color;
+		}
 
-        &:focus,
-        &:hover {
-            background-color: transparent;
-            background: none;
-            border-color: transparent;
-            color: $brand-color;
-        }
-
-        &[disabled] {
-
-            &:focus,
-            &:hover {
-                color: $brand-color;
-            }
-        }
-    }
+		&[disabled] {
+			&:focus,
+			&:hover {
+				color: $brand-color;
+			}
+		}
+	}
 }
