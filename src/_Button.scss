@@ -12,32 +12,6 @@ Types of buttons:
 - Link: Link Button without background
 
 ```types.html
-<<<<<<< HEAD
-<button class="btn">Default</button>
-<button class="btn btn--outline">Outline</button>
-<button class="btn btn--link">Link</button>
-```
-*/
-
-
-/*
----
-name: Button
-category: Components
----
-
-Buttons can be used with `<button>` and `<input>` elements.
-
-Sizes of buttons:
-- Small: Small sized button
-- Medium: Medium sized button
-- Large: Large sized button
-
-```sizes.html
-<button class="btn btn--sm">Small</button>
-<button class="btn btn--md">Medium</button>
-<button class="btn btn--lg">Large</button>
-=======
 
 <h1>Default Buttons</h1>
 			<button class="button-primary">
@@ -82,7 +56,6 @@ Sizes of buttons:
 				أحس
 			</button>
 
->>>>>>> 421ba1382026de29b24b2c3f659f1d0f20532777
 ```
 */
 
@@ -155,61 +128,6 @@ input[type="submit"] {
 		&:focus,
 		&:hover {
 			background-color: $brand-color;
-<<<<<<< HEAD
-			background: linear-gradient(
-				$gradient-angle,
-				$brand-color-1,
-				$brand-color-2
-			);
-		}
-	}
-
-	&.btn--outline {
-		background-color: transparent;
-		background: none;
-		border-color: $brand-color;
-		color: $brand-color;
-
-		&:focus,
-		&:hover {
-			background-color: transparent;
-			background: none;
-			border-color: $brand-color;
-			color: $brand-color;
-		}
-
-		&[disabled] {
-			&:focus,
-			&:hover {
-				border-color: inherit;
-				color: $brand-color;
-			}
-		}
-	}
-
-	&.btn--link {
-		background-color: transparent;
-		background: none;
-		border-color: transparent;
-		color: $brand-color;
-
-		&:focus,
-		&:hover {
-			background-color: transparent;
-			background: none;
-			border-color: transparent;
-			color: $brand-color;
-		}
-
-		&[disabled] {
-			&:focus,
-			&:hover {
-				color: $brand-color;
-			}
-		}
-	}
-}
-=======
             background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
         }    
     }
@@ -361,4 +279,3 @@ button {
     min-height: 60px;
     padding: 10px 10px 5px 10px;
   }
->>>>>>> 421ba1382026de29b24b2c3f659f1d0f20532777
