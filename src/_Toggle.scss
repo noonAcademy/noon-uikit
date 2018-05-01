@@ -5,12 +5,7 @@ name: Toggle
 category: Components
 ---
 
-Buttons can be used with `<button>` and `<input>` elements.
 
-Types of buttons:
-- Default: Standard button
-- Outline: outline button use as a secondary button
-- Link: Link Button without background
 
 ```types.html
 <br>
@@ -23,6 +18,11 @@ Types of buttons:
 				</div>
             </div>
             <br>
+
+             <div class="toggle-wrapper">
+      <button class="button-new ">off</button>
+      <button class="button-new active">on</button>
+    </div>
 
 ```
 */
@@ -81,4 +81,28 @@ Types of buttons:
        
      }
       }
+
+  }
+
+  .toggle-wrapper {
+    border: 1px solid $brand-color;
+    background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
+    display: inline-block;
+    border-radius: 30px;
+    padding: 2px;
+    height:40px;
+    .button-new {
+      color: white;
+      border: 0px;
+      background: none;
+      margin: 0px;
+      padding: 5px 20px 10px;
+      font-size: 12px;
+      height: 34px;
+      min-width: 100px;
+      &.active {
+        color: white;
+        background: $brand-color;
+      }
+    }
   }

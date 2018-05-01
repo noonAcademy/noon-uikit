@@ -22,7 +22,7 @@ Normal Forms can be used with `<div class="form-item">` by putting `<input>` ele
             
             <h3>Phone</h3>
 			<div class="form-item phone">
-				<img src="assets/group-14551@3x.png" />
+				<img src="assets/phone.png" />
 				<span class="v-line"></span>
 				<input type="text" name="name" class="input">
             </div>
@@ -142,9 +142,9 @@ Normal Forms can be used with `<div class="form-item">` by putting `<input>` ele
     }
     &.phone{
         img{
-            height: 40px;
-            left: 15px;
-            top: 0px;
+            height: 15px;
+            left: 30px;
+            top: 10px;
             position: absolute;
             
         }
