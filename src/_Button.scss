@@ -120,13 +120,13 @@ input[type="submit"] {
 		background-color: $brand-color;
 		background: linear-gradient(
 			$gradient-angle,
-			$brand-color-1,
-			$brand-color-2
-		);
+			lighten ($brand-color-1, 10%),
+			lighten ($brand-color-2, 10%)
+        );
+        
 		border: 0px;
 		color: #fff;
         outline: 0;
-        opacity:0.8;
 	}
 	&[disabled] {
 		cursor: default;
