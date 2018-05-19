@@ -1,6 +1,6 @@
 {
 	"name": "noon-basic-components",
-	"version": "0.0.1",
+	"version": "0.0.4",
 	"description": "Noon Education Platform's basic components to act as boilerplate in new and old projects. Contains elements such as buttons, colors, form elements and table design parts.",
 	"main": "src/noon-uikit.scss",
 	"author": "Shoeb Raza <mail@shoebraza.com>, Usama Sulaiman <sulaiman.usama@gmail.com> (http://usamasulaiman.com)",
@@ -21,9 +21,9 @@
 		"node": ">=6"
 	},
 	"bugs": {
-    "url": "https://github.com/usamasulaiman/noon-sass/issues"
-  },
-  "homepage": "https://github.com/usamasulaiman/noon-sass#readme",
+		"url": "https://github.com/usamasulaiman/noon-sass/issues"
+	},
+	"homepage": "https://github.com/usamasulaiman/noon-sass#readme",
 	"dependencies": {
 		"autoprefixer": "^8.2.0",
 		"stylemark": "^0.6.5"
@@ -51,9 +51,9 @@
 		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check .",
 		"setup": "npm i && npm install copyfiles yarn -g"
 	},
-	"files":[
-		"src/_Base.scss",	
+	"files": [
+		"src/_Base.scss",
 		"src/_Button.scss",
-		"src/_Color.scss"	
+		"src/_Color.scss"
 	]
 }
