@@ -23,4 +23,115 @@ body {
 	font-weight: 300;
 	letter-spacing: .01em;
 	line-height: 1.6;
+	font-size: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+/* Body Content */
+p, span {
+  font-size: 1rem;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+@media (min-width: 43.75em) {
+  p, span {
+    font-size: 1rem;
+    /* equivalent to 16px */
+    /* line-height: 1.375; */
+    /* equivalent to 22px */
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+h1 {
+  font-size: 2rem;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  // font-family: 'Cairo-Bold';
+}
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5rem;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3rem;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height 
+    and something more appropriate for display headings */
+  }
+}
+h2 {
+  font-size: 1.625rem;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  // font-family: 'Cairo-Bold';
+  
+}
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2rem;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25rem;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+h3 {
+  font-size: 1.375rem;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  // font-family: 'Cairo-Bold';
+}
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5rem;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75rem;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+h4 {
+  font-size: 1.125rem;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+  // font-family: 'Cairo-Bold';
+}
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    
+  }
+}
+h5 {
+  font-size: 0.875rem;
+  // font-family: 'Cairo-Bold';
+}
+h6 {
+  font-size: 0.750rem;
+  // font-family: 'Cairo-Bold';
+}
+.small, small {
+  font-size:0.75rem;
 }
