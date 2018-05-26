@@ -18,7 +18,6 @@ Types of buttons:
 ```
 */
 
-
 /*
 ---
 name: Button
@@ -39,9 +38,6 @@ Sizes of buttons:
 ```
 */
 
-
-
-
 .btn,
 button,
 input[type="button"],
@@ -49,44 +45,46 @@ input[type="reset"],
 input[type="submit"] {
 	background-color: $brand-color;
 	background: linear-gradient($gradient-angle, $brand-color-1, $brand-color-2);
-	border: 0.1rem solid transparent;
-	border-radius: 0.4rem;
+	border: 0px;
+	box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.11);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+	border-radius: 0.8rem;
 	display: inline-block;
-	letter-spacing: 0.1rem;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
-  color: #fff;
-  cursor: pointer;
-  padding: 0 1.0rem;
-  height: 2.5rem;
-  line-height: 2.3rem;
-  font-size: 0.9rem;
-  min-width:120px;
-  margin: 5px 0px;
+	color: #fff;
+	cursor: pointer;
+	padding: 0 1rem;
+	height: 3.5rem;
+	line-height: 3.3rem;
+	font-size: 1.6rem;
+	font-weight: 300;
+	min-width: 100px;
+	margin: 5px 0px;
 	&:last-child,
 	&:first-child {
 		margin: 0;
 	}
 
-	&.btn--sm{
-    height: 1.9rem;
-    line-height: 1.7rem;
-    font-size: 0.8rem;
-    min-width:90px;
-  }
-	&.btn--md{
-    height: 2.5rem;
-		line-height: 2.3rem;
-		font-size: 0.9rem;
-		min-width:120px;
-  }
-  &.btn--lg{
-    height: 3.0rem;
-    line-height: 2.8rem;
-    font-size: 1.2rem;
-    min-width:150px;
-  }
+	&.btn--sm {
+		height: 2.9rem;
+		line-height: 2.7rem;
+		font-size: 1.3rem;
+		min-width: 90px;
+	}
+	&.btn--md {
+		height: 3.5rem;
+		line-height: 3.3rem;
+		font-size: 1.6rem;
+		min-width: 120px;
+	}
+	&.btn--lg {
+		height: 4.4rem;
+		line-height: 4rem;
+		font-size: 2.2rem;
+		min-width: 150px;
+	}
 
 	&:focus,
 	&:hover {
@@ -96,10 +94,9 @@ input[type="submit"] {
 			$brand-color-1,
 			$brand-color-2
 		);
-		border: .1rem solid transparent;
-    padding:0 .95rem;
 		color: #fff;
 		outline: 0;
+		opacity: 0.85;
 	}
 	&[disabled] {
 		cursor: default;
@@ -117,46 +114,41 @@ input[type="submit"] {
 	}
 
 	&.btn--outline {
-		background-color: transparent;
 		background: none;
-		border-color: $brand-color;
+		border: 1px solid $brand-color;
 		color: $brand-color;
 
 		&:focus,
 		&:hover {
-			background-color: transparent;
 			background: none;
-			border-color: $brand-color;
-			color: $brand-color;
+			border-color: darken($brand-color, 5%);
+			color: darken($brand-color, 5%);
 		}
 
 		&[disabled] {
 			&:focus,
 			&:hover {
-				border-color: inherit;
 				color: $brand-color;
 			}
 		}
 	}
 
 	&.btn--link {
-		background-color: transparent;
-		background: none;
+		background: $grey-color-lightest;
 		border-color: transparent;
-		color: $brand-color;
+		color: $grey-color-dark;
 
 		&:focus,
 		&:hover {
-			background-color: transparent;
-			background: none;
-			border-color: transparent;
-			color: $brand-color;
+			background: $grey-color-light;
+			color: $grey-color-darkest;
 		}
 
 		&[disabled] {
 			&:focus,
 			&:hover {
-				color: $brand-color;
+				background: $grey-color-lightest;
+				color: $grey-color-dark;
 			}
 		}
 	}
