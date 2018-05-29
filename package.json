@@ -26,6 +26,7 @@
 	"homepage": "https://github.com/usamasulaiman/noon-sass#readme",
 	"dependencies": {
 		"autoprefixer": "^8.2.0",
+		"hoek": "^5.0.3",
 		"stylemark": "^0.6.5"
 	},
 	"devDependencies": {
