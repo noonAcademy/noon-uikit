@@ -1,0 +1,155 @@
+.form-control,
+input[text],
+input[tel],
+input[search],
+input[email],
+input[password],
+input[number],
+select {
+	padding: 10px;
+	min-width: 245px;
+	height: 4.2rem;
+	line-height: 5rem;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+	text-align: right;
+	outline: none;
+	direction: rtl;
+	border-radius: 0.8rem;
+	border: 1px solid $grey-color-light;
+	font-family: "Cairo";
+	background: $white;
+	&.active,
+	&:hover,
+	&:focus {
+		border-color: $brand-color;
+	}
+}
+
+.form-wrapper {
+	min-width: 245px;
+	display: inline-block;
+	//Phone
+	&.phone {
+		position: relative;
+		.form-control,
+		input[text],
+		input[tel],
+		input[search],
+		input[email],
+		input[password],
+		input[number] {
+			padding-left: 80px;
+			text-align: left;
+			direction: ltr;
+		}
+		&:after {
+			content: "";
+			width: 1px;
+			height: calc(100% - 10px);
+			position: absolute;
+			top: 5px;
+			left: 70px;
+			background: $grey-color-light;
+		}
+	}
+
+	&.textarea {
+		textarea.form-control {
+			min-height: 4rem;
+			height: 4rem;
+			line-height: initial;
+		}
+	}
+
+	//Toggle
+	&.toggle {
+		position: relative;
+		border-radius: 0.8rem;
+		height: 4.1rem;
+		background: $white;
+		border: 1px solid $grey-color-light;
+		label {
+			width: calc(50% - 8px);
+			height: calc(100% - 8px);
+			margin: 4px;
+			display: inline-block;
+			border-radius: 0.5rem;
+			padding: 6px;
+			box-sizing: border-box;
+			color: $grey-color-dark;
+			cursor: pointer;
+			&:hover {
+				color: $brand-color;
+			}
+		}
+		input {
+			display: none;
+		}
+		input:checked + label {
+			background: linear-gradient(
+				$gradient-angle,
+				$brand-color-1,
+				$brand-color-2
+			);
+			color: $white;
+		}
+		&:after {
+			content: "";
+			width: 1px;
+			height: calc(100% - 10px);
+			position: absolute;
+			top: 5px;
+			left: 50%;
+			transform: translatex(-50%);
+			background: $grey-color-light;
+		}
+		&:hover {
+			border-color: $brand-color;
+			&:after {
+				background: $brand-color;
+			}
+		}
+	}
+
+	//Correct
+	&.correct {
+		.form-control,
+		input[text],
+		input[tel],
+		input[search],
+		input[email],
+		input[password],
+		input[number] {
+			border-color: $primary-green-1;
+		}
+		&:after {
+			content: "";
+			width: 10px;
+			height: 10px;
+		}
+	}
+
+	//Incorrect
+	&.incorrect {
+		.form-control,
+		input[text],
+		input[tel],
+		input[search],
+		input[email],
+		input[password],
+		input[number] {
+			border-color: $primary-red-1;
+		}
+		&:after {
+			content: "";
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+
+.form-item {
+	display: inline-block;
+	vertical-align: top;
+}

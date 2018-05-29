@@ -9,8 +9,6 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- Imports
-- Grid
 - Base Styles
 - Typography
 - Lists
@@ -20,29 +18,6 @@
 - Floats and Clearing
 - Direction
 */
-
-/* Imports
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-// @import url("https://fonts.googleapis.com/css?family=Cairo:400,600,700&subset=arabic");
-
-/* Grid
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.outer-container {
-	position: relative;
-	width: 100%;
-	max-width: 1350px;
-	margin: 0 auto;
-	padding: 0 10px;
-	box-sizing: border-box;
-}
-.inner-container {
-	position: relative;
-	width: calc(100% - 20px);
-	max-width: 1350px;
-	margin: 0 auto;
-	padding: 0 5px;
-	box-sizing: border-box;
-}
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -116,7 +91,6 @@ h6,
 .h6,
 .topic-subheading {
 	font-weight: 300;
-	text-align: right;
 }
 
 h1,

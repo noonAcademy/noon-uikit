@@ -98,6 +98,7 @@ input[type="submit"] {
 		outline: 0;
 		opacity: 0.85;
 	}
+
 	&[disabled] {
 		cursor: default;
 		opacity: 0.5;
@@ -150,6 +151,32 @@ input[type="submit"] {
 				background: $grey-color-lightest;
 				color: $grey-color-dark;
 			}
+		}
+	}
+}
+
+.toggle-button-group {
+	border-radius: 0.8rem;
+	direction: ltr; // don't remove this otherwise the border-radius will mess up
+	.btn {
+		display: inline-block;
+		background: none;
+		color: $grey-color-dark;
+		&.right {
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+		&.left {
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+		}
+		&.active {
+			background: linear-gradient(
+				$gradient-angle,
+				$brand-color-1,
+				$brand-color-2
+			);
+			color: $white;
 		}
 	}
 }
