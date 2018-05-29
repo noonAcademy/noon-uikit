@@ -1,6 +1,6 @@
 {
 	"name": "noon-basic-components",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Noon Education Platform's basic components to act as boilerplate in new and old projects. Contains elements such as buttons, colors, form elements and table design parts.",
 	"main": "src/noon-uikit.scss",
 	"author": "Shoeb Raza <mail@shoebraza.com>, Usama Sulaiman <sulaiman.usama@gmail.com> (http://usamasulaiman.com)",
