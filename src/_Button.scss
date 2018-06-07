@@ -1,7 +1,7 @@
 /*
 ---
 name: Button
-category: Components
+category: UI Components
 ---
 
 Buttons can be used with `<button>` and `<input>` elements.
@@ -21,10 +21,8 @@ Types of buttons:
 /*
 ---
 name: Button
-category: Components
+category: UI Components
 ---
-
-Buttons can be used with `<button>` and `<input>` elements.
 
 Sizes of buttons:
 - Small: Small sized button
@@ -35,6 +33,34 @@ Sizes of buttons:
 <button class="btn btn--sm">Small</button>
 <button class="btn btn--md">Medium</button>
 <button class="btn btn--lg">Large</button>
+<button class="btn btn--sm">Small</button>
+<button class="btn btn--md">Medium</button>
+<button class="btn btn--lg">Large</button>
+<button class="btn btn--sm">Small</button>
+<button class="btn btn--md">Medium</button>
+<button class="btn btn--lg">Large</button>
+<button class="btn btn--sm">Small</button>
+<button class="btn btn--md">Medium</button>
+<button class="btn btn--lg">Large</button>
+<button class="btn btn--sm">Small</button>
+<button class="btn btn--md">Medium</button>
+<button class="btn btn--lg">Large</button>
+```
+*/
+
+/*
+---
+name: Button
+category: UI Components
+---
+
+## Button groups are amazing
+
+```button-group.html
+<div class="toggle-button-group">
+	<button class="btn left active">male</button>
+	<button class="btn right">female</button>
+</div>
 ```
 */
 

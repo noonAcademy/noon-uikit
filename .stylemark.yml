@@ -1,11 +1,12 @@
-name: noon-uikit
+name: Styleguide
+logo: https://www.non.sa/www/img/logo-ar.svg
 
 excludeDir:
   - docs
 
 sidebar:
-  background: "#0cc8f4"
-  textColor: "#fff"
+  background: "#dedad7"
+  textColor: "#2a2a2a"
 
 headHtml: |
   <link rel="stylesheet" href="dist/noon-uikit.min.css">
